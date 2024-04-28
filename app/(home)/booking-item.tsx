@@ -4,13 +4,13 @@ import { Card, CardContent } from "../_components/ui/card";
 
 const BookingItem = () => {
   return (
-    <Card>
-      <CardContent className="p-5 flex justify-between py-8">
-        <div className="c">
+    <Card className="mt-10p">
+      <CardContent className="mt-0 m p-2 mb-0 flex justify-between py-4">
+        <div>
           <Badge className="bg-[#221C3D] text-primary hover:bg-[#221C3D] w-fit">Confirmado</Badge>
-          <h2 className="font-bold">{"Corte de Cabelo"}</h2>
+          <h2 className=" mt-2 font-bold">{"Corte de Cabelo"}</h2>
 
-          <div className="flex items-center gap-2 py-5">
+          <div className="flex items-center gap-2 py-2">
             <Avatar className="h-6 w-6">
               <AvatarImage src="https://utfs.io/f/0ddfbd26-a424-43a0-aaf3-c3f1dc6be6d1-1kgxo7.png" />
               <AvatarFallback>A</AvatarFallback>
