@@ -1,6 +1,6 @@
-import { Avatar, AvatarFallback, AvatarImage } from "../_components/ui/avatar";
-import { Badge } from "../_components/ui/badge";
-import { Card, CardContent } from "../_components/ui/card";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { Badge } from "./ui/badge";
+import { Card, CardContent } from "./ui/card";
 
 const BookingItem = () => {
   return (
