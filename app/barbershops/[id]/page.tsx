@@ -1,4 +1,6 @@
+
 import { db } from "@/app/_lib/prisma";
+import BarbershopInfo from "./_components/barbershop-info";
 
 interface BarbershopDetailsPageProps {
     params: {
@@ -24,9 +26,7 @@ const BarbershopDetailsPage = async ({ params }: BarbershopDetailsPageProps) => 
     }
     
     return (
-        <div>
-            <h1>{barbershop.name}</h1>
-         </div>
+       <BarbershopInfo barbershop={barbershop}/>
     );
 };    
 
