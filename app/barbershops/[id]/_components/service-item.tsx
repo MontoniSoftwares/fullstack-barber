@@ -28,8 +28,9 @@ const ServiceItem = ({ service }: ServiceItemProps) => {
   };
 
   return (
+ 
     <Card>
-      <CardContent className="p-3 w-full">
+            <CardContent className="p-3 w-full">
         <div className="flex gap-4 items-center w-full">
           <div className="relative min-w-[110px] min-h-[110px] max-h-[110px]">
             <Image
