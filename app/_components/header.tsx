@@ -1,6 +1,6 @@
 "use client";
 
-import { MenuIcon } from "lucide-react";
+import { signIn } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
@@ -8,6 +8,9 @@ import { Card, CardContent } from "./ui/card";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
 const Header = () => {
+  const handleLoginClick = async () =>{
+    await signIn();
+  }
   return (
     <header>
       <Card>
@@ -17,12 +20,11 @@ const Header = () => {
           </Link>
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="outline" size="icon">
-                <MenuIcon size={16} />
-              </Button>
+              <Button onClick={handleLoginClick}>Login</Button>
             </SheetTrigger>
 
             <SheetContent className="p-0">
+              {/* Conteúdo da planilha */}
             </SheetContent>
           </Sheet>
         </CardContent>
